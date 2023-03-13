@@ -81,12 +81,38 @@ my_set = {'apple', 'android', 'iphone'}
 print(type(my_set))
 my_set.add('orange')
 
-my_set2 = {(10, 25), 10, 45, 67}
-my_set3 = set()
-print(my_set3)
+my_set2 = { 10, 45, 67}
+my_set4 = { 10, 45, 67, 106, 455, 667}
 # my_set2 = [10, 25, 10, 45, 67]
 # print(dir(my_set2))
 print(my_set2)
+# UNION-method
+all_sets =my_set2.union(my_set4)
+print(all_sets)
+# INTERSECTION-method
+common_s =my_set2.intersection(my_set4)
+# common_s =my_set2&(my_set4) # & - kan bruges som intersection
+print(common_s)
+# ISSUBSET - method
+is_sub = my_set2.issubset(my_set4)
+print(is_sub)
+print("-------------------")
+# Практика - Методы наборов
+my_set5 = {'abc', 'a', 'c'}
+other_set = {'a','f','c',}
+print(my_set5.intersection('ab')) # dlya poiska odinakovyh 
+print(my_set5.union(other_set)) # dlya obedineniya elementov
+print(my_set5.issubset(other_set)) # dlya sravneniya dvuh elementov
+print(my_set5 == other_set, my_set5 is other_set)
+print(my_set5.difference(other_set))
+print(my_set5 | other_set) # union
+print(my_set5 & other_set) # intersection
+print(my_set5.discard('a'))
+print(my_set5)
+my_set5.add('h')
+other_set.add('y')
+print(my_set5, '\n', other_set)
+print(my_set5 & other_set) # sravnivaet obshij element
 
 
 

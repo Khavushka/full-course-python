@@ -73,15 +73,22 @@
 - izmenyat mozhno
 - v naborah obychno sohranyajut odnotipnye obejkty
 - ne ispolzovat [], chtoby uznat index
-- index netu u elementov
+- indexov netu u elementov
+- nelzya dobavlyat izmenyaemye objekty: list, dict, set
+- nelzya udalyat s 'del'
 '''
 my_set = {'apple', 'android', 'iphone'}
-my_set2 = {10, 25, 45, 67}
-my_set.add('orange')
 print(type(my_set))
-print(my_set)
-my_set2.__getitem__(0)
-print(my_set2[0])
+my_set.add('orange')
+
+my_set2 = {(10, 25), 10, 45, 67}
+my_set3 = set()
+print(my_set3)
+# my_set2 = [10, 25, 10, 45, 67]
+# print(dir(my_set2))
+print(my_set2)
+
+
 
 
 # Min lommeregner

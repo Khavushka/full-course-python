@@ -46,25 +46,42 @@
 # print(all_ids)
 
 # Methods tuple( only two methods: count, index)
-posts_ids = (123, 456)
+# posts_ids = (123, 456)
 
-posts_ids_list = list(posts_ids)
-posts_ids_list.append(345)
-# posts_ids_list.remove(123)
+# posts_ids_list = list(posts_ids)
+# posts_ids_list.append(345)
+# # posts_ids_list.remove(123)
 
-print(posts_ids_list)
+# print(posts_ids_list)
 
-posts_ids_tuple = tuple(posts_ids_list)
+# posts_ids_tuple = tuple(posts_ids_list)
 
-print(posts_ids_tuple)
+# print(posts_ids_tuple)
 
 # Praktika tuple
-my_nums = (10, 5, 28, 6, 5, 6)
-my_list = list(my_nums)
-my_list.append(7)
-print(my_list)
-my_nums = tuple(my_list)
-print(my_nums)
+# my_nums = (10, 5, 28, 6, 5, 6)
+# my_list = list(my_nums)
+# my_list.append(7)
+# print(my_list)
+# my_nums = tuple(my_list)
+# print(my_nums)
+
+'''
+Наборы - set (neuporyadochnaya posledovatelnost elementov)
+- soderzhit tolko unikalnye elementy
+- esli element est, to ne dobavitsya
+- izmenyat mozhno
+- v naborah obychno sohranyajut odnotipnye obejkty
+- ne ispolzovat [], chtoby uznat index
+- index netu u elementov
+'''
+my_set = {'apple', 'android', 'iphone'}
+my_set2 = {10, 25, 45, 67}
+my_set.add('orange')
+print(type(my_set))
+print(my_set)
+my_set2.__getitem__(0)
+print(my_set2[0])
 
 
 # Min lommeregner

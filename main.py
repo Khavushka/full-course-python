@@ -113,8 +113,28 @@ my_set5.add('h')
 other_set.add('y')
 print(my_set5, '\n', other_set)
 print(my_set5 & other_set) # sravnivaet obshij element
+print("-----------------------------")
+copied_set = my_set.copy()
+print(copied_set)
+print(copied_set & my_set)
 
 # Практика - Симметричная разница в наборах
+my_set.add('r')
+copied_set.add('b')
+# print(my_set.symmetric_difference(copied_set))
+print((my_set | copied_set) - (my_set & copied_set) )
+
+''' 
+Диапазоны - range(uporyadochnaya neizmenyaemaya posledovatlnost elementov)
+- Diapazony obychno ispolzuyjtsya v ciklah
+- Kazhdyj diapazon - eto eksemplyar klassa range
+'''
+my_range = range(10, 20, 3) # 1. nachalo, 2. konec, 3. shag
+print(list(my_range))
+print(my_range[3]) # index poluchenie
+# Практика - Диапазоны
+
+
 
 
 # Min lommeregner

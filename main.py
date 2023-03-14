@@ -114,7 +114,7 @@ other_set.add('y')
 print(my_set5, '\n', other_set)
 print(my_set5 & other_set) # sravnivaet obshij element
 
-
+# Практика - Симметричная разница в наборах
 
 
 # Min lommeregner

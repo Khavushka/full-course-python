@@ -136,14 +136,17 @@ print("--------------------")
 # Практика - Диапазоны
 test_range = range(1,100, 5)
 for i in test_range:
-    print(i)
-    if i >= 5:
+        i += 1
         print('*')
-    elif i >= 15:
-        print('**')
 
+print(list(range(12, 25, 5)))
+# Диапазоны-methods
+print(dir(range(2)))
+print(test_range.start)
+print(test_range.step)
+print(test_range.stop)
 
-
+# Сравнение типов последовательностей
 
 
 # Min lommeregner

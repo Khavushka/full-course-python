@@ -149,6 +149,8 @@ print(test_range.stop)
 # Сравнение типов последовательностей
 
 
+
+
 # Min lommeregner
 # print("Hej, her er min egen lommeregner. Enjoy")
 # a = int(input("Enter a number: "))

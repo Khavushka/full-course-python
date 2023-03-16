@@ -132,7 +132,16 @@ print((my_set | copied_set) - (my_set & copied_set) )
 my_range = range(10, 20, 3) # 1. nachalo, 2. konec, 3. shag
 print(list(my_range))
 print(my_range[3]) # index poluchenie
+print("--------------------")
 # Практика - Диапазоны
+test_range = range(1,100, 5)
+for i in test_range:
+    print(i)
+    if i >= 5:
+        print('*')
+    elif i >= 15:
+        print('**')
+
 
 
 

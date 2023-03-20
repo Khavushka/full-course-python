@@ -1,3 +1,5 @@
+# https://www.youtube.com/watch?v=cr_3evPrzsU
+
 # Несуществующие ключи и метод get
 # my_moto = {
 #     'brand' : 'Ducati',
@@ -146,7 +148,7 @@ print(test_range.start)
 print(test_range.step)
 print(test_range.stop)
 
-# Сравнение типов последовательностей
+# Встроенная функция zip
 
 
 

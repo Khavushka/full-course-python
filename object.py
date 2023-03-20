@@ -56,3 +56,6 @@ print(info)
 print(info_deepcopy)
 
 # Практика - Создание поверхностных и полных копий
+info['new_key'] = 10
+print(info)
+

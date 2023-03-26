@@ -15,13 +15,28 @@
 #     print(set_star)
 
 # Task 3
-vare = ['t-sirt', 'jakke', 'frakke']
-priser = [350, 540, 1200]
+# vare = ['t-sirt', 'jakke', 'frakke']
+# priser = [350, 540, 1200]
 
-samlet = zip(vare, priser)
-om_dict = dict(samlet)
-print(om_dict)
+# samlet = zip(vare, priser)
+# om_dict = dict(samlet)
+# print(om_dict)
 
 # samlet = zip(vare, priser)
 # om_list = list(samlet)
 # print(om_list)
+
+# Task 4
+def merge_lists_to_dict(a, b):
+    c = a + b
+    return c
+
+fruits = ['apple', 'banana', 'kiwi']
+quantities = [100, 80, 20]
+
+fruits_q_zip = zip(fruits, quantities)
+
+om_til_list = list(merge_lists_to_dict(fruits,quantities))
+print(om_til_list)
+    
+    

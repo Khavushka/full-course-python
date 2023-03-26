@@ -1,20 +1,53 @@
 # function
 
-def sum(a, b):
-    a += 1
-    c = a + b
-    # print(c)
-    return c
+# def sum(a, b):
+#     a += 1
+#     c = a + b
+#     # print(c)
+#     return c
 
-res = sum(23,67)
-print(res)
+# res = sum(23,67)
+# print(res)
 # print(type(sum))
 
 # the shortest function
 
-def my_fn():
-    pass # used to block error, when it's empty
+# def my_fn():
+#     pass # used to block error, when it's empty
 
-print(my_fn()) # None
+# print(my_fn()) # None
 
 # Передача неизменяемых объектов в функцию
+# def my_nf(a, b):
+#     a = a + 1
+#     c = a + b
+#     return c
+
+# num_one = 10
+# num_two = 5
+
+# res = my_nf(num_one, num_two)
+# print(res)
+# # print(my_nf(num_one, num_two))
+# print(num_one)
+
+# Передача изменяемых объектов в функцию
+def increase_person_age(person):
+    person_copy = person.copy()
+    person_copy['age'] += 1
+    return person_copy
+
+person_one = {
+    'name': 'John',
+    'age': 21,
+    'sex': 'male'
+}
+
+# increase_person_age(person_one)
+new_person_one = increase_person_age(person_one)
+print(new_person_one)
+# print(person_one['age'], person_one['name'])
+print(person_one)
+# print(dir(dict))
+
+# Аргументы функций

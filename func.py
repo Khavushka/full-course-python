@@ -32,22 +32,26 @@
 # print(num_one)
 
 # Передача изменяемых объектов в функцию
-def increase_person_age(person):
-    person_copy = person.copy()
-    person_copy['age'] += 1
-    return person_copy
+# def increase_person_age(person):
+#     person_copy = person.copy()
+#     person_copy['age'] += 1
+#     return person_copy
 
-person_one = {
-    'name': 'John',
-    'age': 21,
-    'sex': 'male'
-}
+# person_one = {
+#     'name': 'John',
+#     'age': 21,
+#     'sex': 'male'
+# }
 
 # increase_person_age(person_one)
-new_person_one = increase_person_age(person_one)
-print(new_person_one)
+# new_person_one = increase_person_age(person_one)
+# print(new_person_one)
 # print(person_one['age'], person_one['name'])
-print(person_one)
+# print(person_one)
 # print(dir(dict))
 
 # Аргументы функций
+def sum_nums(*args):
+    return(sum)
+
+print(2, 3, 4)

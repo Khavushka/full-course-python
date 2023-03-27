@@ -52,6 +52,6 @@
 
 # Аргументы функций
 def sum_nums(*args):
-    return(sum)
+    return(sum(args))
 
-print(2, 3, 4)
+print(sum_nums(2, 3, 4))

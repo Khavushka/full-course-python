@@ -55,3 +55,5 @@ def sum_nums(*args):
     return(sum(args))
 
 print(sum_nums(2, 3, 4))
+
+# Объединение всех аргументов в кортеж в функции

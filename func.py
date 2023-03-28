@@ -62,5 +62,8 @@ def get_posts_info(name, posts_qty):
     info = f"{name} wrote {posts_qty} posts"
     return info
 
-info = get_posts_info("eva", 33)
-print(info)
+name = input("Enter name: ")
+posts_qty = int(input("Posts you wrote: "))
+# info = get_posts_info(name, posts_qty)
+# print(info)
+print(get_posts_info(name, posts_qty))

@@ -51,10 +51,16 @@
 # print(dir(dict))
 
 # Аргументы функций
+# hvis man bruger * så vil man have multi arguments
 def sum_nums(*args):
     return(sum(args))
 
 print(sum_nums(2, 3, 4))
 
-# Объединение всех аргументов в кортеж в функции
-# til
+# Аргументы с ключевыми словами
+def get_posts_info(name, posts_qty):
+    info = f"{name} wrote {posts_qty} posts"
+    return info
+
+info = get_posts_info("eva", 33)
+print(info)

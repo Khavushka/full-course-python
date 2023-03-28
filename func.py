@@ -17,6 +17,7 @@
 
 # print(my_fn()) # None
 
+# --------------------------------------------------------
 # Передача неизменяемых объектов в функцию
 # def my_nf(a, b):
 #     a = a + 1
@@ -31,6 +32,7 @@
 # # print(my_nf(num_one, num_two))
 # print(num_one)
 
+# --------------------------------------------------------
 # Передача изменяемых объектов в функцию
 # def increase_person_age(person):
 #     person_copy = person.copy()
@@ -50,20 +52,25 @@
 # print(person_one)
 # print(dir(dict))
 
+# ---------------------------------------------------------------
 # Аргументы функций
 # hvis man bruger * så vil man have multi arguments
-def sum_nums(*args):
-    return(sum(args))
+# def sum_nums(*args):
+#     return(sum(args))
 
-print(sum_nums(2, 3, 4))
-
+# print(sum_nums(2, 3, 4))
+# --------------------------------------------------------------
 # Аргументы с ключевыми словами
-def get_posts_info(name, posts_qty):
-    info = f"{name} wrote {posts_qty} posts"
-    return info
+# def get_posts_info(name, posts_qty):
+#     info = f"{name} wrote {posts_qty} posts"
+#     return info
 
-name = input("Enter name: ")
-posts_qty = int(input("Posts you wrote: "))
-# info = get_posts_info(name, posts_qty)
-# print(info)
-print(get_posts_info(name, posts_qty))
+# name = input("Enter name: ")
+# posts_qty = int(input("Posts you wrote: "))
+# # info = get_posts_info(name, posts_qty)
+# # print(info)
+# print(get_posts_info(name, posts_qty))
+# Using arguments with keys words do our code more readeble
+
+# -------------------------------------------------------------------
+# Объединение именованых аргументов в словарь

@@ -38,5 +38,8 @@ fruits_q_zip = zip(fruits, quantities)
 
 om_til_list = list(merge_lists_to_dict(fruits,quantities))
 print(om_til_list)
+
+# Task 5
+
     
     

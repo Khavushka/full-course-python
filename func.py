@@ -63,6 +63,7 @@
 # Аргументы с ключевыми словами
 # def get_posts_info(name, posts_qty):
 #     info = f"{name} wrote {posts_qty} posts"
+#     info = f"{person['name']} wrote {person['posts_qty']} posts"
 #     return info
 
 # name = input("Enter name: ")
@@ -75,7 +76,7 @@
 # -------------------------------------------------------------------
 # Объединение именованых аргументов в словарь
 def get_post_info(**person):
-    # print(person)
+    print(person)
     # print(type(person))
     info = {
         f"{person['name']} wrote "
@@ -83,5 +84,8 @@ def get_post_info(**person):
     }
     return info
 
-info2 = get_post_info(name='Eva', created=25)
+info2 = get_post_info(name='Eva', created=25, id=214)
 print(info2)
+
+# ----------------------------------------------------------------------
+# Значения параметров функции по умолчанию

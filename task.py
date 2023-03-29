@@ -27,19 +27,36 @@
 # print(om_list)
 
 # Task 4
-def merge_lists_to_dict(a, b):
-    c = a + b
-    return c
+# def merge_lists_to_dict(a, b):
+#     c = a + b
+#     return c
 
-fruits = ['apple', 'banana', 'kiwi']
-quantities = [100, 80, 20]
+# fruits = ['apple', 'banana', 'kiwi']
+# quantities = [100, 80, 20]
 
-fruits_q_zip = zip(fruits, quantities)
+# fruits_q_zip = zip(fruits, quantities)
 
-om_til_list = list(merge_lists_to_dict(fruits,quantities))
-print(om_til_list)
+# om_til_list = list(merge_lists_to_dict(fruits,quantities))
+# print(om_til_list)
 
 # Task 5
+def merge_lists_to_dict(**fruits):
+    print(fruits)
+    samlet = {
+        f"{fruits['fruit']} //"
+        f"{fruits['quantity']} was here"
+    }
+    return samlet
 
-    
-    
+# fruits_q_zip = zip(fruits, quantities)
+
+# om_til_list = list(merge_lists_to_dict(fruits,quantities))
+info2 = merge_lists_to_dict(fruit = ['apple', 'banana', 'kiwi'], quantity = [100, 80, 20] )
+print(info2)
+
+
+# -----------------------------------------------------
+
+def update_car_info(**car):
+    pass
+        

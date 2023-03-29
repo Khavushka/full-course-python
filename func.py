@@ -74,3 +74,14 @@
 
 # -------------------------------------------------------------------
 # Объединение именованых аргументов в словарь
+def get_post_info(**person):
+    # print(person)
+    # print(type(person))
+    info = {
+        f"{person['name']} wrote "
+        f"{person['created']} posts"
+    }
+    return info
+
+info2 = get_post_info(name='Eva', created=25)
+print(info2)

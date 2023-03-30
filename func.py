@@ -96,6 +96,7 @@ print(mult_by_factor(10, 2))
 print(mult_by_factor(5))
 # nalichie znacheniya på default for parametres can using without requiers
 
+# Практика - Значения параметров по умолчанию
 from datetime import date
 
 
@@ -117,3 +118,7 @@ initial_post = {
 post_with_weekday = create_new_post(initial_post)
 print(initial_post)
 print(post_with_weekday)
+
+
+# ---------------------------------------------------------------------
+# Колбэк функции - Callback function

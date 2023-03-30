@@ -89,3 +89,11 @@ print(info2)
 
 # ----------------------------------------------------------------------
 # Значения параметров функции по умолчанию
+def mult_by_factor(value, multiplier=1):
+    return value * multiplier
+
+print(mult_by_factor(10, 2))
+print(mult_by_factor(5))
+# nalichie znacheniya på default for parametres without requiers
+
+

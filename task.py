@@ -58,5 +58,14 @@ print(info2)
 # -----------------------------------------------------
 
 def update_car_info(**car):
-    pass
+    update_info = {
+        f"{car['brand']} did "
+        f"{car['price']} -kr, "
+        f"{car['available']}"
+    }
+    return update_info
+
+result = update_car_info(brand = 'Faina', price = 100, available = True)
+print(result)
+
         

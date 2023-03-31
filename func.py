@@ -172,3 +172,6 @@ process_data({'name': 'Fifa'}, send_data)
 - en function gør kun en ting
 - ikke ændre global variabler til functioner
 '''
+
+# ---------------------------------------------------------------
+# Документация функции docstring

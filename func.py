@@ -154,10 +154,21 @@
 
 # Example 3
 def send_data(data):
+    # sending data to the remote server
     pass
 
 def process_data(input_data, send_data_fn):
     updated_data = input_data.copy()
+    # actions with updated_data
     send_data_fn(updated_data)
     
 process_data({'name': 'Fifa'}, send_data)
+
+# ------------------------------------------------------------
+'''
+Правила работы с функциями:
+- kald functoner efter deres functionalitet
+- start functioner med udsagnsord
+- en function gør kun en ting
+- ikke ændre global variabler til functioner
+'''

@@ -75,57 +75,71 @@
 
 # -------------------------------------------------------------------
 # Объединение именованых аргументов в словарь
-def get_post_info(**person):
-    print(person)
-    # print(type(person))
-    info = {
-        f"{person['name']} wrote "
-        f"{person['created']} posts"
-    }
-    return info
+# def get_post_info(**person):
+#     print(person)
+#     # print(type(person))
+#     info = {
+#         f"{person['name']} wrote "
+#         f"{person['created']} posts"
+#     }
+#     return info
 
-info2 = get_post_info(name='Eva', created=25, id=214)
-print(info2)
+# info2 = get_post_info(name='Eva', created=25, id=214)
+# print(info2)
 
 # ----------------------------------------------------------------------
 # Значения параметров функции по умолчанию
-def mult_by_factor(value, multiplier=1):
-    return value * multiplier
+# def mult_by_factor(value, multiplier=1):
+#     return value * multiplier
 
-print(mult_by_factor(10, 2))
-print(mult_by_factor(5))
+# print(mult_by_factor(10, 2))
+# print(mult_by_factor(5))
 # nalichie znacheniya på default for parametres can using without requiers
 
 # Практика - Значения параметров по умолчанию
-from datetime import date
+# from datetime import date
 
 
-def get_weekday():
-    return date.today().strftime('%A')
+# def get_weekday():
+#     return date.today().strftime('%A')
 
 
-def create_new_post(post, weekday=get_weekday()):
-    post_copy = post.copy()
-    post_copy['created_on_weekday'] = weekday
-    return post_copy
+# def create_new_post(post, weekday=get_weekday()):
+#     post_copy = post.copy()
+#     post_copy['created_on_weekday'] = weekday
+#     return post_copy
 
 
-initial_post = {
-    'id': 123,
-    'author': 'Fifa'
-}
+# initial_post = {
+#     'id': 123,
+#     'author': 'Fifa'
+# }
 
-post_with_weekday = create_new_post(initial_post)
-print(initial_post)
-print(post_with_weekday)
+# post_with_weekday = create_new_post(initial_post)
+# print(initial_post)
+# print(post_with_weekday)
 
 
 # ---------------------------------------------------------------------
 # Колбэк функции - Callback function
-def other_fn():
-    pass
+# def other_fn():
+#     pass
 
-def fn_with_callback(callback_fn):
-    callback_fn()
+# def fn_with_callback(callback_fn):
+#     callback_fn()
     
-fn_with_callback(other_fn)
+# fn_with_callback(other_fn)
+
+
+def print_number_info(num):
+    if (num % 2) == 0:
+        print("Enter number is even")
+    else:
+        print("Enter number is odd")
+    
+def process_number(num, callback_fn):
+    callback_fn(num)
+    
+entered_num = int(input("Enter any number: "))
+
+process_number(entered_num, print_number_info)

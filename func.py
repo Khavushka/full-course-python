@@ -319,9 +319,9 @@ set set()
 range range(0)
 str""
 '''
-my_list = [1, 2]
-if len(my_list) > 0:
-    print("List has elements")
+# my_list = [1, 2]
+# if len(my_list) > 0:
+#     print("List has elements")
     
 '''
 not - prints bool value
@@ -336,3 +336,20 @@ not not None #False
 
 # -----------------------------------
 # Операторы короткого замыкания or и and
+# SHORT-CIRCUIT
+''' 
+AND 
+OR
+'''
+# my_list = [1, 2]
+my_list = []    
+print(not not my_list)
+
+other_list = ['a', 'b']
+print(len(my_list) > 0 or other_list)
+
+my_dict = {}
+# my_dict = {'a': 5}
+print(bool(my_list and my_dict))
+
+my_list and print("List is not empty")

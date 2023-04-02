@@ -285,14 +285,14 @@ appropriation (присвоение): =
 + my_number
 not is_activated
 '''
-my_num = 10
-print(+ my_num)
+# my_num = 10
+# print(+ my_num)
 
-my_bool = True
-# my_bool = False
-print(+my_bool)
+# my_bool = True
+# # my_bool = False
+# print(+my_bool)
 
-print(not my_num)
+# print(not my_num)
 
 # Бинарные операторы
 # Binary operator has two operands
@@ -300,3 +300,33 @@ print(not my_num)
 
 # -----------------------------------
 # Операторы in, not in
+# my_car = {
+#     'brand': 'Toyota',
+#     'price': 10_000
+# }
+
+# print('brand' in my_car)
+# print('year' in my_car)
+# print('year' not in my_car)
+
+# ----------------------------------
+# Ложные значения
+'''
+dict {}
+list []
+tuple ()
+set set()
+range range(0)
+str""
+'''
+my_list = [1, 2]
+if len(my_list) > 0:
+    print("List has elements")
+    
+'''
+not - prints bool value
+and / or - prints one of the value
+'''
+
+# -----------------------------------
+# Операторы короткого замыкания or и and

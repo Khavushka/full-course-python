@@ -246,15 +246,57 @@ process_data({'name': 'Fifa'}, send_data)
 # my_glob()
 
 # print(a)
-c = 34
 
-def my_ab(a, b):
-    d = 10
-    print(c)
-    print(a, b)
-    print(dir())
+# 2 test
+# c = 34
 
-my_ab(3, 5)
+# def my_ab(a, b):
+#     d = 10
+#     print(c)
+#     print(a, b)
+#     print(dir())
 
-print(dir())
+# my_ab(3, 5)
+
+# print(dir())
 # print(a) 
+
+# -------------------------------------------------
+# Операторы
+''' 
+comparison (сравнение): + - * /
+arithmetic (арифметические): == != < >
+logic (логические): not and or
+appropriation (присвоение): =
+'''
+# a = [1, 2]
+# b = [1, 2]
+
+# print(a == b)
+# print(a.__eq__(b))
+# print(a.__eq__)
+# print(hex(id(a)))
+
+# --------------------------------------------
+# Функция dir
+# унарные операторы
+''' 
+- my_number
++ my_number
+not is_activated
+'''
+my_num = 10
+print(+ my_num)
+
+my_bool = True
+# my_bool = False
+print(+my_bool)
+
+print(not my_num)
+
+# Бинарные операторы
+# Binary operator has two operands
+
+
+# -----------------------------------
+# Операторы in, not in

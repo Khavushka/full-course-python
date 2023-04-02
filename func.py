@@ -212,18 +212,18 @@ process_data({'name': 'Fifa'}, send_data)
 # Области видимости
 
 # 1 example
-a = 10
+# a = 10
 
-def my_fn():
-    a = True
-    b = 15
-    print(a)
-    print(b)
+# def my_fn():
+#     a = True
+#     b = 15
+#     print(a)
+#     print(b)
     
-my_fn()
+# my_fn()
 
-print(a)
-print(b)
+# print(a)
+# print(b)
 
 # 2 example
 # a = 5
@@ -237,3 +237,24 @@ print(b)
 
 # -------------------------------------------------
 # Ключевое слово global в функциях
+# a = 5
+
+# def my_glob(): 
+#     global a
+#     a = 10
+    
+# my_glob()
+
+# print(a)
+c = 34
+
+def my_ab(a, b):
+    d = 10
+    print(c)
+    print(a, b)
+    print(dir())
+
+my_ab(3, 5)
+
+print(dir())
+# print(a) 

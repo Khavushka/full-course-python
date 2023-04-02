@@ -226,11 +226,11 @@ process_data({'name': 'Fifa'}, send_data)
 # print(b)
 
 # 2 example
-a = 5
+# a = 5
 
-def my_fn():
-    def inner_fn():
-        print(a)
-    inner_fn()
+# def my_fn():
+#     def inner_fn():
+#         print(a)
+#     inner_fn()
     
-my_fn()
+# my_fn()

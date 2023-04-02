@@ -154,6 +154,11 @@
 
 # Example 3
 def send_data(data):
+    """_summary_
+
+    Args:
+        data (_type_): _description_
+    """  
     # sending data to the remote server
     pass
 
@@ -167,7 +172,7 @@ process_data({'name': 'Fifa'}, send_data)
 # ------------------------------------------------------------
 '''
 Правила работы с функциями:
-- kald functoner efter deres functionalitet
+- giv navn til functioner efter deres functionalitet
 - start functioner med udsagnsord
 - en function gør kun en ting
 - ikke ændre global variabler til functioner
@@ -175,3 +180,33 @@ process_data({'name': 'Fifa'}, send_data)
 
 # ---------------------------------------------------------------
 # Документация функции docstring
+# - uses to discription for function, classes and module 
+
+# 1 example
+def mult_by_factor(value, mult=1):
+    """Multiplies number by multiplicator"""
+    return value * mult
+
+mult_by_factor(5)
+
+# 2 example
+def print_number_info(num):
+    """
+    Prints num information
+
+    Args:
+        num (int): Integer number
+
+    Returns:
+        int: Same number
+    """
+    if (num % 2) == 0:
+        print("Num is even")
+    else:
+        print("Num is odd")
+    return num
+
+print_number_info('abc')
+
+# -----------------------------------------------------
+# Области видимости

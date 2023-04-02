@@ -206,7 +206,19 @@ def print_number_info(num):
         print("Num is odd")
     return num
 
-print_number_info('abc')
+print_number_info(34)
 
 # -----------------------------------------------------
 # Области видимости
+a = 10
+
+def my_fn():
+    a = True
+    b = 15
+    print(a)
+    print(b)
+    
+my_fn()
+
+print(a)
+print(b)

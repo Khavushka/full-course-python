@@ -326,6 +326,12 @@ if len(my_list) > 0:
 '''
 not - prints bool value
 and / or - prints one of the value
+not not 10 #True
+not not 0 #False
+not not 'abc' #True
+not not '' #False
+not not True #True
+not not None #False
 '''
 
 # -----------------------------------

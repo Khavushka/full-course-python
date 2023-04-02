@@ -182,43 +182,55 @@ process_data({'name': 'Fifa'}, send_data)
 # Документация функции docstring
 # - uses to discription for function, classes and module 
 
-# 1 example
-def mult_by_factor(value, mult=1):
-    """Multiplies number by multiplicator"""
-    return value * mult
+# # 1 example
+# def mult_by_factor(value, mult=1):
+#     """Multiplies number by multiplicator"""
+#     return value * mult
 
-mult_by_factor(5)
+# mult_by_factor(5)
 
 # 2 example
-def print_number_info(num):
-    """
-    Prints num information
+# def print_number_info(num):
+#     """
+#     Prints num information
 
-    Args:
-        num (int): Integer number
+#     Args:
+#         num (int): Integer number
 
-    Returns:
-        int: Same number
-    """
-    if (num % 2) == 0:
-        print("Num is even")
-    else:
-        print("Num is odd")
-    return num
+#     Returns:
+#         int: Same number
+#     """
+#     if (num % 2) == 0:
+#         print("Num is even")
+#     else:
+#         print("Num is odd")
+#     return num
 
-print_number_info(34)
+# print_number_info(34)
 
 # -----------------------------------------------------
 # Области видимости
-a = 10
+
+# 1 example
+# a = 10
+
+# def my_fn():
+#     a = True
+#     b = 15
+#     print(a)
+#     print(b)
+    
+# my_fn()
+
+# print(a)
+# print(b)
+
+# 2 example
+a = 5
 
 def my_fn():
-    a = True
-    b = 15
-    print(a)
-    print(b)
+    def inner_fn():
+        print(a)
+    inner_fn()
     
 my_fn()
-
-print(a)
-print(b)
